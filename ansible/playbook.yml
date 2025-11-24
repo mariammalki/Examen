@@ -1,0 +1,7 @@
+- hosts: devops_lab
+  become: yes
+  roles:
+    - common
+    - docker
+    - terraform
+    - jenkins

@@ -1,0 +1,17 @@
+
+---
+# tasks file for common
+
+- name: Install APT prerequisites (raw to bypass cache issues)
+  raw: apt-get update && apt-get install -y apt-transport-https ca-certificates gnupg
+
+- name: Update apt cache
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: Upgrade all packages
+  apt:
+    upgrade: dist
+    update_cache: yes
+
