@@ -127,19 +127,40 @@ Sync Policy : Automatic
 
 ## Supervision et Monitoring avec Grafana Cloud
 
-Création d’un compte Grafana Cloud (plan Free).
-
-Installation de Grafana Alloy / Grafana Agent sur la VM :
-
-ARCH="amd64" GCLOUD_HOSTED_METRICS_URL="https://prometheus-prod-58-prod-eu-central-0.grafana.net/api/prom/push" GCLOUD_RW_API_KEY="<API_TOKEN>" /bin/sh -c "$(curl -fsSL https://storage.googleapis.com/cloud-onboarding/alloy/scripts/install-linux.sh)"
+1. Création d’un compte Grafana Cloud (plan Free).
 
 ![Supervision et Monitoring avec Grafana Cloud](captures-Exam/grafanacloud.png)
 
-Configuration du fichier agent.yaml pour VM, Docker et K3s 
+2. Créer une clé API (token)
 
-Vérification :
+![Supervision et Monitoring avec Grafana Cloud](captures-Exam/token.png)
 
-sudo systemctl status alloy.service
+3. Installer Node Exporter (monitoring VM)
+Node Exporter permet de collecter les métriques CPU, RAM, disque, réseau.
+
+![Supervision et Monitoring avec Grafana Cloud](captures-Exam/Node-Exporter.png)
+
+4. Installer cAdvisor (monitoring Docker)
+
+cAdvisor collecte les métriques des conteneurs Docker.
+
+![Supervision et Monitoring avec Grafana Cloud](captures-Exam/Installer-cAdvisor.png)
+
+5. Installer metrics-server pour K3s
+
+Objectif : Permettre de collecter les métriques des pods et du cluster Kubernetes.
+
+![Supervision et Monitoring avec Grafana Cloud](captures-Exam/Installer-metrics-server.png)
+
+6. Installer Grafana Alloy (Agent) pour Grafana Cloud
+
+Objectif : Envoyer toutes les métriques et logs collectés vers Grafana Cloud pour monitoring centralisé.
+
+![Supervision et Monitoring avec Grafana Cloud](captures-Exam/Installer-metrics-server.png)
+
+
+
+
 
 
 
