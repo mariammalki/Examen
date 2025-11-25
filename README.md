@@ -69,7 +69,7 @@ Terraform déploie un conteneur Docker nommé moncv
 5. Tester : http://<IP_VM>:8585 .
 Test d’accès depuis la machine locale : http://192.168.1.28:8585.
 
-[!Déploiement Docker avec Terraform](captures-Exam/accès-conteneur-moncv.png)
+![Déploiement Docker avec Terraform](captures-Exam/accès-conteneur-moncv.png)
 
 ## Orchestration Kubernetes avec K3s et Argo CD
 
@@ -77,7 +77,8 @@ Test d’accès depuis la machine locale : http://192.168.1.28:8585.
 
 curl -sfL https://get.k3s.io | sh -
 sudo k3s kubectl get nodes
-[!Installer K3s Single Node sur DEVOPS-LAB](captures-Exam/k3s.png)
+
+![Installer K3s Single Node sur DEVOPS-LAB](captures-Exam/k3s.png)
 
 2. Déploiement via Argo CD :
 
@@ -87,12 +88,12 @@ Namespace : default
 
 Sync Policy : Automatic
 
-[!Argo CD pour déployer votre CV One Page](captures-Exam/argo-cd.png)
+![Argo CD pour déployer votre CV One Page](captures-Exam/argo-cd.png)
 
 
 3. Test d’accès : http://192.168.1.28:30085.
 
-[!Argo CD pour déployer votre CV One Page](captures-Exam/argocd-test-accés.png)
+![Argo CD pour déployer votre CV One Page](captures-Exam/argocd-test-accés.png)
 
 ## Supervision et Monitoring avec Grafana Cloud
 
@@ -102,7 +103,7 @@ Installation de Grafana Alloy / Grafana Agent sur la VM :
 
 ARCH="amd64" GCLOUD_HOSTED_METRICS_URL="https://prometheus-prod-58-prod-eu-central-0.grafana.net/api/prom/push" GCLOUD_RW_API_KEY="<API_TOKEN>" /bin/sh -c "$(curl -fsSL https://storage.googleapis.com/cloud-onboarding/alloy/scripts/install-linux.sh)"
 
-[!Supervision et Monitoring avec Grafana Cloud](captures-Exam/grafanacloud.png)
+![Supervision et Monitoring avec Grafana Cloud](captures-Exam/grafanacloud.png)
 
 Configuration du fichier agent.yaml pour VM, Docker et K3s 
 
