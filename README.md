@@ -72,6 +72,8 @@ Installation de Jenkins.
 
 ansible-playbook -i inventory.yml playbook.yml 
 
+![ansible](captures-Exam/ansible.png)
+
 ## Pipeline CI/CD avec Jenkins
 
 Récupération du code GitHub : https://github.com/mariammalki/cv-one-page.
@@ -112,11 +114,8 @@ sudo k3s kubectl get nodes
 
 2. Déploiement via Argo CD :
 
-Path du repo : k8s
-
-Namespace : default
-
-Sync Policy : Automatic
+récupérer le mot de passe initial de l’utilisateur admin dans Argo CD:
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 
 ![Argo CD pour déployer votre CV One Page](captures-Exam/argo-cd.png)
 
