@@ -115,31 +115,3 @@ sudo systemctl status alloy.service
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. Ecrire le code (main.tf).
-2. Initialiser (terraform init).
-3. Planifier (terraform plan).
-4. Appliquer (terraform apply).
-5. Tester : http://<IP_VM>:8585 .
