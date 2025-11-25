@@ -63,9 +63,9 @@ Installation de Terraform.
 
 Installation de Jenkins.
 
-Exemple de commande pour exécuter le playbook :
+commande pour exécuter le playbook :
 
-ansible-playbook -i inventory.yml playbook.yml --ask-become-pass
+ansible-playbook -i inventory.yml playbook.yml 
 
 ## Pipeline CI/CD avec Jenkins
 
