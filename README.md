@@ -155,7 +155,7 @@ Objectif : Permettre de collecter les métriques des pods et du cluster Kubernet
 
 Objectif : Envoyer toutes les métriques et logs collectés vers Grafana Cloud pour monitoring centralisé.
 
-![Supervision et Monitoring avec Grafana Cloud](captures-Exam/Installer-metrics-server.png)
+![Supervision et Monitoring avec Grafana Cloud](captures-Exam/Installer-Grafana-Alloy.png)
 
 
 
