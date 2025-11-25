@@ -52,8 +52,13 @@ ssh mariem@192.168.1.28
 ![Configurer l’accès par clés SSH à DEVOPS-LAB](captures-Exam/test-ssh.png)
 
 ## Automatisation avec Ansible
+1. créer roles :
+ansible-galaxy init common
+ansible-galaxy init docker
+ansible-galaxy init jenkins
+ansible-galaxy init terraform
 
-Les rôles Ansible présents dans ansible/ automatisent :
+2. Les rôles Ansible présents dans ansible/ automatisent :
 
 Mise à jour du système (apt update && apt upgrade).
 
@@ -63,7 +68,7 @@ Installation de Terraform.
 
 Installation de Jenkins.
 
-commande pour exécuter le playbook :
+3. commande pour exécuter le playbook :
 
 ansible-playbook -i inventory.yml playbook.yml 
 
