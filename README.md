@@ -20,7 +20,7 @@ Ce dépôt contient tous les éléments nécessaires pour l'examen pratique DevO
 
 - VM Ubuntu Server 24.04 nommée `DEVOPS-LAB`.  
 - Accès par clés SSH depuis la machine locale (clé publique copiée dans `~/.ssh/authorized_keys`).  
-![Configurer l’accès par clés SSH à DEVOPS-LAB]()
+![Configurer l’accès par clés SSH à DEVOPS-LAB](captures-Exam/accès par clés SSH.png)
 
 - Commande de test SSH :
 ssh mariem@192.168.1.28
