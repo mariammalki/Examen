@@ -93,7 +93,7 @@ Sync Policy : Automatic
 
 3. Test d’accès : http://192.168.1.28:30085.
 
-![Argo CD pour déployer votre CV One Page](captures-Exam/argocd-test-accés.png)
+![Argo CD pour déployer votre CV One Page](captures-Exam/argcd-test-accés.png)
 
 ## Supervision et Monitoring avec Grafana Cloud
 
