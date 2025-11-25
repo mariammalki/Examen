@@ -5,16 +5,41 @@ Ce dépôt contient tous les éléments nécessaires pour l'examen pratique DevO
 ---
 
 ## Table des matières
-
-1. [Préparation de l'environnement](#préparation-de-lenvironnement)  
-2. [Automatisation avec Ansible](#automatisation-avec-ansible)  
-3. [Pipeline CI/CD avec Jenkins](#pipeline-cicd-avec-jenkins)  
-4. [Déploiement Docker avec Terraform](#déploiement-docker-avec-terraform)  
-5. [Orchestration Kubernetes avec K3s et Argo CD](#orchestration-kubernetes-avec-k3s-et-argo-cd)  
-6. [Supervision et Monitoring avec Grafana Cloud](#supervision-et-monitoring-avec-grafana-cloud)  
-7. [Structure du dépôt](#structure-du-dépôt)  
+1. [Structure du dépôt](#structure-du-dépôt)  
+2. [Préparation de l'environnement](#préparation-de-lenvironnement)  
+3. [Automatisation avec Ansible](#automatisation-avec-ansible)  
+4. [Pipeline CI/CD avec Jenkins](#pipeline-cicd-avec-jenkins)  
+5. [Déploiement Docker avec Terraform](#déploiement-docker-avec-terraform)  
+6. [Orchestration Kubernetes avec K3s et Argo CD](#orchestration-kubernetes-avec-k3s-et-argo-cd)  
+7. [Supervision et Monitoring avec Grafana Cloud](#supervision-et-monitoring-avec-grafana-cloud)  
+ 
 
 ---
+## Structure du dépôt
+Examen-Pratique/
+│
+├─ ansible/
+│  ├─ inventory.yml
+│  ├─ playbook.yml
+│  └─ roles/
+│     ├─ common/
+│     ├─ docker/
+│     ├─ jenkins/
+│     └─ terraform/
+│
+├─ captures-Exam/
+│
+├─ cv-one-page/
+│  ├─ Dockerfile
+│  ├─ Jenkinsfile
+│  └─ index.html
+│
+├─ k8s/
+│  ├─ cv-deployment.yaml
+│  ├─ cv-service.yaml
+│
+├─ README.md
+├─ main.tf
 
 ## Préparation de l'environnement
 
